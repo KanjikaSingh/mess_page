@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mess</title>
+    <title>Mess Suggestion Form</title>
     <style>
         * {
            font-family: 'Ubuntu', sans-serif;
        }
+       body{
+        margin: 0;
+       }
+       
        .floater {
            background-color: white;
            height: 30px;
@@ -135,12 +139,56 @@
            margin-top: -8px;
        }
        #suggform{
-        width: fit-content;
+        /* width: fit-content; */
         float: left;
         font-size: x-large;
        }
        select{
-        padding-left: 50px;
+        /* padding-left: 20px; */
+        width: 200px;
+        text-align: center;
+        color: brown;
+        font-size:medium;
+       }
+       #suggform{
+        /* width: fit-content; */
+        /* border: 2px solid blue; */
+        margin-left:30%;
+        align-content: center;
+        float: left;
+        clear: right;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        /* font-family: ; */
+       }
+       #day{
+        margin-left: 20%;
+       }
+       #time{
+        margin-left: 19.3%;
+       }
+       #suggestions{
+        margin-left: 35%;
+       }
+       h1{
+        margin-left: 8%;
+       }
+       #submit{
+        height: 50px;
+        width: 20%;
+        font-size: large;
+        border: none;
+        /* background-color: ; */
+        color:brown;
+        cursor: pointer;
+       }
+       #submit:hover{
+            transform: translateY(-6px);
+       }
+       body{
+        background-image: url(https://raw.githubusercontent.com/KanjikaSingh/signinpage/main/hostel.jpeg) !important;
+        background: no-repeat;
+        background-size: cover;
        }
    </style>
 </head>
@@ -154,7 +202,7 @@
     </div>
     <div class="stickyone">
         <div class="heading sticky">
-            <img src="logo.png" width="70px" height="70px" class="logo">
+            <img src="https://raw.githubusercontent.com/KanjikaSingh/signinpage/main/logo.png" width="70px" height="70px" class="logo">
             <h1 class="clgname">BMS EDUCATIONAL TRUST HOSTELS</h1>
         </div>
         <nav class="navbar">
@@ -187,24 +235,25 @@
                 </li>
                 <li style="float: right;" id="profile"><a href="#">PROFILE</a></li>
                 <li style="float: right;">
-                    <img src="download.png" height="30px" width="30px" class="profileimage"
+                    <img src="https://raw.githubusercontent.com/KanjikaSingh/fees.html/main/download.png" height="30px" width="30px" class="profileimage"
                         style="margin-top:-5px;">
                 </li>
             </ul>
         </nav>
     </div>
-    <div class="messform">
-        <h5>MESS</h5>
+    <div class="bg">
+        <div class="messform">
+        <!-- <h5>MESS</h5> -->
         <br>
         <center>
-            <h1>Mess Suggestion Form</h1>
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(255, 255, 255);">Mess Suggestion Form</h1>
         </center>
         <br><br>
         <form id="suggform">
-            <label>
+            <label id="day">
                 Day
             </label>
-            <select >
+            <select id="day">
                 <option value="mon">Monday</option>
                 <option value="tue">Tuesday</option>
                 <option value="wed">Wednesday</option>
@@ -213,35 +262,31 @@
                 <option value="sat">Saturday</option>
                 <option value="sun">Sunday</option>
                 </select>
-        </form>
-        <br><br><br><br>
+        <!-- </form> -->
+        <br><br><br>
         <form id="suggform">
-            <label>
+            <label id="time">
                 Time
             </label>
-            <select >
+            <select id="time">
                 <option value="brf">Breakfast</option>
                 <option value="lnc">Lunch</option>
                 <option value="snk">Snacks</option>
                 <option value="din">Dinner</option>
                 </select>
             <br><br><br>
-            <label for="suggestions">Suggestions</label>
+            <label for="suggestions" id="suggestions">Suggestions</label>
             <br><br>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea cols="100" rows="10" placeholder="Enter your suggestions..."></textarea>
             <br><br>
             <center>
-            <input type="submit">
+            <input type="submit" id="submit">
             </center>
             <br><br><br><br><br>
         </form>
+         </div>
     </div>
-    <div class="floater">
-        <marquee class="qwerty" id="moving" width="100%" height="20px" direction="left" onmouseover="this.stop()"
-            onmouseout="this.start()">
-            <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem repudiandae
-                impedit atque suscipit fugit beatae culpa laboriosam voluptates unde!</div>
-        </marquee>
-    </div>
+    
+
 </body>
 </html>
